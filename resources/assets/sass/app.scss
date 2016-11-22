@@ -1,0 +1,23 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// AnimateCSS
+@import "node_modules/animate.css/animate";
+
+// Font-awesome
+@import "node_modules/font-awesome/css/font-awesome";
+
+// Variables
+@import "variables";
+
+// Bulma
+@import "node_modules/bulma/bulma";
+
+// Custom css
+
+.hero{
+	background-image:url('/images/hero.jpg')!important;
+	background-size: cover;
+    background-position: 50%;
+}
