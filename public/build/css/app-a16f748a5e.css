@@ -8889,8 +8889,50 @@ a.panel-block:hover {
         border-bottom-color: #00d1b2; }
 
 .hero {
-  background-image: url("/images/hero.jpg") !important;
+  background-image: url("/images/test.jpg") !important;
   background-size: cover;
-  background-position: 50%; }
+  background-position: 0 70%; }
+
+.nav {
+  min-height: 70px; }
+
+.nav-item img {
+  max-height: 55px; }
+
+.has-no-background {
+  background: none; }
+
+.container {
+  max-width: 1000px; }
+
+.has-half-container-width {
+  max-width: 600px; }
+
+.showcase-card-column {
+  position: relative; }
+
+.showcase-card-image {
+  max-height: 230px; }
+
+.showcase-card-image-overlay {
+  position: absolute;
+  padding: 20px;
+  top: 10%;
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.showcase-card-image-overlay h1 {
+  color: gray; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.mt-50px {
+  margin-bottom: 50px; }
+
+.pb-20 {
+  padding-bottom: 20px; }
+
+.pt-20 {
+  padding-top: 20px; }
 
 /*# sourceMappingURL=app.css.map */
