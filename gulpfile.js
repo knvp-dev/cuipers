@@ -19,6 +19,12 @@ elixir((mix) => {
     	'node_modules/bulma/bulma',
     	'app.scss'
     ])
+    .styles([
+    	'vendor/lity.css'
+    ],'public/css/vendor.css')
+    .scripts([
+    	'vendor/lity.js'
+    ],'public/js/vendor.js')
     .webpack('app.js')
     .version('css/app.css');
 });
