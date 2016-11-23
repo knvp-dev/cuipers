@@ -21,11 +21,13 @@ elixir((mix) => {
     ])
     .styles([
     	'vendor/lity.css',
-        'vendor/baguetteBox.css'
+        'vendor/baguetteBox.css',
+        'vendor/dropzone.css'
     ],'public/css/vendor.css')
     .scripts([
     	'vendor/lity.js',
         'vendor/masonry.min.js',
+        'vendor/dropzone.js',
         'vendor/baguetteBox.min.js'
     ],'public/js/vendor.js')
     .webpack('app.js')

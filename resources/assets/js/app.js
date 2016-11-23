@@ -37,7 +37,8 @@ const app = new Vue({
     	},
     	formControl: {
     		showForm: true,
-    		showCheckmark: false
+    		showCheckmark: false,
+            loading: false
     	}
     },
     mounted(){
@@ -47,9 +48,10 @@ const app = new Vue({
     	validateContactForm(e){
     		this.$validator.validateAll();
             if (!this.errors.any()) {
-            	console.log(this.contactInfo);
+                this.formControl.showForm = false;
+                this.formControl.loading = true;
             	this.$http.post('/contact', this.contactInfo).then(function(response){
-            		this.formControl.showForm = false;
+                    this.formControl.loading = false;
             		this.formControl.showCheckmark = true;
             	});
             }

@@ -11,11 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
+use App\Album;
+
+Route::get('/', function() {
+	$nieuwbouw = Album::whereCategory('nieuwbouw')->with('photo')->get();
+	$renovatie = Album::whereCategory('renovatie')->with('photo')->get();
+	$verbouwing = Album::whereCategory('verbouwing')->with('photo')->get();
+    return view('pages.home',compact('nieuwbouw','renovatie','verbouwing'));
 });
 
-Route::get('/bouwwerken/{slug}', 'ShowcaseController@index');
-Route::get('/bouwwerken/{slug}/showcase/{id}', 'ShowcaseController@show');
+Route::get('/bouwwerken/{categery}', 'ShowcaseController@index');
+Route::get('/bouwwerken/{category}/showcase/{album_id}', 'ShowcaseController@show');
 
 Route::post('/contact', 'ContactController@send');

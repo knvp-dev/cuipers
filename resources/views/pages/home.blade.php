@@ -52,16 +52,16 @@
         </div>
         
         <div class="columns is-multiline">
-
+        @foreach($nieuwbouw as $album)
           <div class="column is-one-third showcase-card-column">
-            <a href="/bouwwerken/verbouwingen/showcase/1">
-              <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
+            <a href="/bouwwerken/{{ $album->category }}/showcase/{{ $album->id }}">
+              <img class="showcase-card-image" src="/images/{{ $album->category }}/{{ $album->photo->first()->path }}" />
               <div class="showcase-card-image-overlay">
-                <h1 class="title is-3">Waregem</h1>
+                <h1 class="title is-3">{{ $album->title }}</h1>
               </div>
             </a>
           </div>
-          
+          @endforeach
         </div>
     </div>
   </section>
@@ -79,14 +79,16 @@
         
         <div class="columns is-multiline">
 
+          @foreach($verbouwing as $album)
           <div class="column is-one-third showcase-card-column">
-            <a href="/bouwwerken/verbouwingen/showcase/1">
-              <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
+            <a href="/bouwwerken/{{ $album->category }}/showcase/{{ $album->id }}">
+              <img class="showcase-card-image" src="/images/{{ $album->category }}/{{ $album->photo->first()->path }}" />
               <div class="showcase-card-image-overlay">
-                <h1 class="title is-3">Waregem</h1>
+                <h1 class="title is-3">{{ $album->title }}</h1>
               </div>
             </a>
           </div>
+          @endforeach
 
         </div>
     </div>
@@ -105,14 +107,16 @@
         
         <div class="columns is-multiline">
 
+          @foreach($renovatie as $album)
           <div class="column is-one-third showcase-card-column">
-            <a href="/bouwwerken/verbouwingen/showcase/1">
-              <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
+            <a href="/bouwwerken/{{ $album->category }}/showcase/{{ $album->id }}">
+              <img class="showcase-card-image" src="/images/{{ $album->category }}/{{ $album->photo->first()->path }}" />
               <div class="showcase-card-image-overlay">
-                <h1 class="title is-3">Waregem</h1>
+                <h1 class="title is-3">{{ $album->title }}</h1>
               </div>
             </a>
           </div>
+          @endforeach
 
         </div>
     </div>
@@ -170,6 +174,21 @@
             </p>
 
           </form>
+
+          <div class="sk-fading-circle" v-if="formControl.loading">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+          </div>
 
           <svg class="checkmark" v-if='formControl.showCheckmark' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
           

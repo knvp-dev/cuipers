@@ -16,32 +16,24 @@
 <div class="container has-text-centered">
 
     <div class="heading mb-50">
-      <h1 class="title">Nieuwbouw</h1>
+      <h1 class="title">{{ $albums->first()->category }}</h1>
       <hr>
       <h2 class="subtitle">
-        Een overzicht van realisaties verbouwingen.
+        Een overzicht van onze realisaties.
       </h2>
     </div>
     
     <div class="columns is-multiline">
-      <div class="column is-one-third showcase-card-column">
-        <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-        <div class="showcase-card-image-overlay">
-          <h1 class="title is-3">Waregem</h1>
+      @foreach($albums as $album)
+        <div class="column is-one-third showcase-card-column">
+          <a href="/bouwwerken/{{ $album->category }}/showcase/{{ $album->id }}">
+            <img class="showcase-card-image" src="/images/{{ $album->category }}/{{ $album->photo->first()->path }}" />
+            <div class="showcase-card-image-overlay">
+              <h1 class="title is-3">{{ $album->title }}</h1>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="column is-one-third showcase-card-column">
-        <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-        <div class="showcase-card-image-overlay">
-          <h1 class="title is-3">Waregem</h1>
-        </div>
-      </div>
-      <div class="column is-one-third showcase-card-column">
-        <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-        <div class="showcase-card-image-overlay">
-          <h1 class="title is-3">Waregem</h1>
-        </div>
-      </div>
+      @endforeach
     </div>
 </div>
 </section>

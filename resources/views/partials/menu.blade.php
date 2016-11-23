@@ -9,7 +9,7 @@
             <a class="nav-item" href="/bouwwerken/nieuwbouw">
               Nieuwbouw
             </a>
-            <a class="nav-item" href="/bouwwerken/verbouwingen">
+            <a class="nav-item" href="/bouwwerken/verbouwing">
               Verbouwingen
             </a>
             <a class="nav-item" href="/bouwwerken/renovatie">
