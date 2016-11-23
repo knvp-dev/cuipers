@@ -130,38 +130,38 @@
 
         <div class="container has-half-container-width">
 
-          <form action="#" class="contact-form" @submit="validateContactForm">
+          <form action="#" class="contact-form" @submit="validateContactForm" v-show="formControl.showForm">
             
             <p class="control has-icon">
-              <input class="input is-medium" type="text" placeholder="Naam" name="naam" v-validate data-rules="required">
+              <input class="input is-medium" type="text" placeholder="Naam" name="naam" v-validate data-rules="required" v-model="contactInfo.naam">
               <i class="fa fa-user"></i>
               @{{ errors.first('naam') }}
             </p>
 
             <p class="control has-icon">
-              <input class="input is-medium" type="text" placeholder="Adres" name="adres">
+              <input class="input is-medium" type="text" placeholder="Adres" name="adres" v-model="contactInfo.adres">
               <i class="fa fa-map-marker"></i>
             </p>
 
             <p class="control has-icon">
-              <input class="input is-medium" type="text" placeholder="Gemeente" name="gemeente">
+              <input class="input is-medium" type="text" placeholder="Gemeente" name="gemeente" v-model="contactInfo.gemeente">
               <i class="fa fa-map-marker"></i>
             </p>
 
             <p class="control has-icon">
-              <input class="input is-medium" type="text" placeholder="Telefoon/GSM" name="telefoon" v-validate data-rules="required|numeric">
+              <input class="input is-medium" type="text" placeholder="Telefoon/GSM" name="telefoon" v-validate data-rules="required|numeric" v-model="contactInfo.telefoon">
               <i class="fa fa-phone"></i>
               @{{ errors.first('telefoon') }}
             </p>
 
             <p class="control has-icon">
-              <input class="input is-medium" type="email" name="email" placeholder="Email" v-validate data-rules="required|email" :class="{'has-error': errors.has('email') }">
+              <input class="input is-medium" type="email" name="email" placeholder="Email" v-validate data-rules="required|email" :class="{'has-error': errors.has('email') }" v-model="contactInfo.email">
               <i class="fa fa-envelope"></i>
               @{{ errors.first('email') }}
             </p>
 
             <p class="control">
-              <textarea class="textarea" placeholder="Bericht" name="bericht" v-validate data-rules="required"></textarea>
+              <textarea class="textarea" placeholder="Bericht" name="bericht" v-validate data-rules="required" v-model="contactInfo.bericht"></textarea>
               @{{ errors.first('bericht') }}
             </p>
 
@@ -170,6 +170,8 @@
             </p>
 
           </form>
+
+          <svg class="checkmark" v-if='formControl.showCheckmark' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
           
         </div>
         

@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('/bouwwerken/{slug}', 'ShowcaseController@index');
 Route::get('/bouwwerken/{slug}/showcase/{id}', 'ShowcaseController@show');
+
+Route::post('/contact', 'ContactController@send');
