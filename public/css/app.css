@@ -8891,7 +8891,7 @@ a.panel-block:hover {
 .hero {
   background-image: url("/images/test.jpg") !important;
   background-size: cover;
-  background-position: 0 70%; }
+  background-position: 0 50%; }
 
 .nav {
   min-height: 70px; }
@@ -8911,17 +8911,24 @@ a.panel-block:hover {
 .showcase-card-column {
   position: relative; }
 
+.showcase-card-column:hover {
+  opacity: .5; }
+
 .showcase-card-image {
   max-height: 230px; }
 
 .showcase-card-image-overlay {
   position: absolute;
-  padding: 20px;
-  top: 10%;
+  padding: 10px;
+  top: 20%;
   background-color: rgba(255, 255, 255, 0.6); }
 
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
 .showcase-card-image-overlay h1 {
-  color: gray; }
+  color: #676767; }
 
 .mb-50 {
   margin-bottom: 50px; }
@@ -8934,5 +8941,10 @@ a.panel-block:hover {
 
 .pt-20 {
   padding-top: 20px; }
+
+.showcase-album-item {
+  float: left;
+  margin: 10px;
+  width: 230px; }
 
 /*# sourceMappingURL=app.css.map */

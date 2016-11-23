@@ -52,42 +52,16 @@
         </div>
         
         <div class="columns is-multiline">
+
           <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
+            <a href="/bouwwerken/verbouwingen/showcase/1">
+              <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
+              <div class="showcase-card-image-overlay">
+                <h1 class="title is-3">Waregem</h1>
+              </div>
+            </a>
           </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
+          
         </div>
     </div>
   </section>
@@ -104,42 +78,16 @@
         </div>
         
         <div class="columns is-multiline">
+
           <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
+            <a href="/bouwwerken/verbouwingen/showcase/1">
+              <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
+              <div class="showcase-card-image-overlay">
+                <h1 class="title is-3">Waregem</h1>
+              </div>
+            </a>
           </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
+
         </div>
     </div>
   </section>
@@ -156,42 +104,16 @@
         </div>
         
         <div class="columns is-multiline">
+
           <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
+            <a href="/bouwwerken/verbouwingen/showcase/1">
+              <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
+              <div class="showcase-card-image-overlay">
+                <h1 class="title is-3">Waregem</h1>
+              </div>
+            </a>
           </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
-          <div class="column is-one-third showcase-card-column">
-            <img class="showcase-card-image" src="{{ asset('images/hero2.jpg') }}" />
-            <div class="showcase-card-image-overlay">
-              <h1 class="title is-3">Waregem</h1>
-            </div>
-          </div>
+
         </div>
     </div>
   </section>

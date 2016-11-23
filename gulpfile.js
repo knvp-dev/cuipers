@@ -20,10 +20,13 @@ elixir((mix) => {
     	'app.scss'
     ])
     .styles([
-    	'vendor/lity.css'
+    	'vendor/lity.css',
+        'vendor/baguetteBox.css'
     ],'public/css/vendor.css')
     .scripts([
-    	'vendor/lity.js'
+    	'vendor/lity.js',
+        'vendor/masonry.min.js',
+        'vendor/baguetteBox.min.js'
     ],'public/js/vendor.js')
     .webpack('app.js')
     .version('css/app.css');

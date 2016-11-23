@@ -10,13 +10,19 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+        <link rel="stylesheet" href="{{ elixir('css/vendor.css') }}">
         <!-- Styles -->
         
     </head>
     <body>
+
         @include('partials.menu')
         @yield('hero')
 		@yield('content')
 		@include('partials.footer')
+        
+        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/vendor.js') }}"></script>
+        
     </body>
 </html>

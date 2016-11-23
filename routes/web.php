@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('pages.home');
 });
+
+Route::get('/bouwwerken/{slug}', 'ShowcaseController@index');
+Route::get('/bouwwerken/{slug}/showcase/{id}', 'ShowcaseController@show');

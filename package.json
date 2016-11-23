@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "baguettebox.js": "^1.8.1",
     "bulma": "^0.2.3",
     "font-awesome": "^4.7.0"
   }
