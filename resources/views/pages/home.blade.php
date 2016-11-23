@@ -127,6 +127,51 @@
             Via onderstaand formulier kan u ons contacteren voor al uw vragen
           </h2>
         </div>
+
+        <div class="container has-half-container-width">
+
+          <form action="#" class="contact-form" @submit="validateContactForm">
+            
+            <p class="control has-icon">
+              <input class="input is-medium" type="text" placeholder="Naam" name="naam" v-validate data-rules="required">
+              <i class="fa fa-user"></i>
+              @{{ errors.first('naam') }}
+            </p>
+
+            <p class="control has-icon">
+              <input class="input is-medium" type="text" placeholder="Adres" name="adres">
+              <i class="fa fa-map-marker"></i>
+            </p>
+
+            <p class="control has-icon">
+              <input class="input is-medium" type="text" placeholder="Gemeente" name="gemeente">
+              <i class="fa fa-map-marker"></i>
+            </p>
+
+            <p class="control has-icon">
+              <input class="input is-medium" type="text" placeholder="Telefoon/GSM" name="telefoon" v-validate data-rules="required|numeric">
+              <i class="fa fa-phone"></i>
+              @{{ errors.first('telefoon') }}
+            </p>
+
+            <p class="control has-icon">
+              <input class="input is-medium" type="email" name="email" placeholder="Email" v-validate data-rules="required|email" :class="{'has-error': errors.has('email') }">
+              <i class="fa fa-envelope"></i>
+              @{{ errors.first('email') }}
+            </p>
+
+            <p class="control">
+              <textarea class="textarea" placeholder="Bericht" name="bericht" v-validate data-rules="required"></textarea>
+              @{{ errors.first('bericht') }}
+            </p>
+
+            <p class="control">
+              <button class="button is-primary" type="submit">Verzenden</button>
+            </p>
+
+          </form>
+          
+        </div>
         
     </div>
   </section>

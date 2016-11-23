@@ -15,14 +15,15 @@
         
     </head>
     <body>
-
-        @include('partials.menu')
-        @yield('hero')
-		@yield('content')
-		@include('partials.footer')
+        <div id="app">
+            @include('partials.menu')
+            @yield('hero')
+    		@yield('content')
+    		@include('partials.footer')
+        </div>
         
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{ asset('js/vendor.js') }}"></script>
-        
+
     </body>
 </html>

@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * include Vue and Vue Resource. This gives a great starting point for
@@ -13,11 +12,26 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-// Vue.component('example', require('./components/Example.vue'));
+import Vue from 'vue';
+import VeeValidate from 'vee-validate';
+Vue.use(VeeValidate);
 
-// const app = new Vue({
-//     el: '#app'
-// });
+//Vue.component('example', require('./components/Example.vue'));
+
+const app = new Vue({
+    el: '#app',
+    mounted(){
+    	this.$validator.setLocale('en');
+    },
+    methods:{
+    	validateContactForm(e){
+    		this.$validator.validateAll();
+            if (this.errors.any()) {
+                e.preventDefault();
+            }
+    	}
+    }
+});
 
 $(function(){
   $('.showcase-album-container').masonry({
