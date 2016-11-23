@@ -9010,4 +9010,7 @@ a.panel-block:hover {
   100% {
     box-shadow: inset 0px 0px 0px 30px #7ac142; } }
 
+.error-msg {
+  color: #F06560; }
+
 /*# sourceMappingURL=app.css.map */

@@ -135,7 +135,7 @@
             <p class="control has-icon">
               <input class="input is-medium" type="text" placeholder="Naam" name="naam" v-validate data-rules="required" v-model="contactInfo.naam">
               <i class="fa fa-user"></i>
-              @{{ errors.first('naam') }}
+              <span class="error-msg">@{{ errors.first('naam') }}</span>
             </p>
 
             <p class="control has-icon">
@@ -151,18 +151,18 @@
             <p class="control has-icon">
               <input class="input is-medium" type="text" placeholder="Telefoon/GSM" name="telefoon" v-validate data-rules="required|numeric" v-model="contactInfo.telefoon">
               <i class="fa fa-phone"></i>
-              @{{ errors.first('telefoon') }}
+              <span class="error-msg">@{{ errors.first('telefoon') }}</span>
             </p>
 
             <p class="control has-icon">
               <input class="input is-medium" type="email" name="email" placeholder="Email" v-validate data-rules="required|email" :class="{'has-error': errors.has('email') }" v-model="contactInfo.email">
               <i class="fa fa-envelope"></i>
-              @{{ errors.first('email') }}
+              <span class="error-msg">@{{ errors.first('email') }}</span>
             </p>
 
             <p class="control">
               <textarea class="textarea" placeholder="Bericht" name="bericht" v-validate data-rules="required" v-model="contactInfo.bericht"></textarea>
-              @{{ errors.first('bericht') }}
+              <span class="error-msg">@{{ errors.first('bericht') }}</span>
             </p>
 
             <p class="control">
