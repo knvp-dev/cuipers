@@ -1,13 +1,13 @@
 @extends('layout.layout')
 
 @section('hero')
-<section class="hero is-small is-info is-bold">
-  <div class="hero-body">
-    <div class="container">
-      
+  <section class="hero is-small is-info is-bold">
+    <div class="hero-body">
+      <div class="container">
+        
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 @endsection
 
 @section('content')

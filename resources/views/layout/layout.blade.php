@@ -21,7 +21,7 @@
     <body>
         <div id="app">
             @include('partials.menu')
-            @yield('hero')
+            
     		@yield('content')
     		@include('partials.footer')
         </div>

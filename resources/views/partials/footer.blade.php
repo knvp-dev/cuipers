@@ -2,11 +2,11 @@
   <div class="container">
     <div class="content has-text-centered">
       <p>
-        <strong>Cuipers.be</strong> by <a href="http://jgthms.com">KNVP.</a>
-        <p>www.cuipers.be | 056 84 57 84 | 0489 52 41 52 | info@cuipers.be</p>
+        <strong>Cuipers.be</strong> by <a href="https://www.facebook.com/knvphulste">KNVP.</a>
+        <p><a href="mailto:info@cuipers.be">info@cuipers.be</a> | 056 32 79 40 | 0477 45 38 12 | Vecubo BVBA, Outrijvestraat 42, 8551 Heestert</p>
       </p>
       <p>
-        <a class="icon" href="https://github.com/jgthms/bulma">
+        <a class="icon" href="https://www.facebook.com/cuipers">
           <i class="fa fa-facebook"></i>
         </a>
       </p>

@@ -8888,6 +8888,12 @@ a.panel-block:hover {
       .footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
         border-bottom-color: #00d1b2; }
 
+[v-cloak] {
+  display: none; }
+
+.is-mobile-menu {
+  display: none; }
+
 .hero {
   background-image: url("/images/hero.jpg") !important;
   background-size: cover;
@@ -8897,7 +8903,7 @@ a.panel-block:hover {
   min-height: 70px; }
 
 .nav-item img {
-  max-height: 55px; }
+  max-height: 80px; }
 
 .has-no-background {
   background: none; }
@@ -9009,6 +9015,18 @@ a.panel-block:hover {
 
 .error-msg {
   color: #F06560; }
+
+a {
+  color: #000; }
+
+.content a:not(.button):visited {
+  color: #4a4a4a; }
+
+.content a:not(.button):hover {
+  color: #000; }
+
+.footer {
+  padding-bottom: 30px; }
 
 .sk-fading-circle {
   margin: 100px auto;
@@ -9133,5 +9151,17 @@ a.panel-block:hover {
     opacity: 0; }
   40% {
     opacity: 1; } }
+
+@media (max-width: 768px) {
+  .is-mobile-menu {
+    display: block; }
+  .nav-menu .nav-item {
+    padding: 20px; }
+  .nav-toggle {
+    cursor: pointer;
+    display: block;
+    height: 99px;
+    position: relative;
+    width: 100px; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -39,7 +39,8 @@ const app = new Vue({
     		showForm: true,
     		showCheckmark: false,
             loading: false
-    	}
+    	},
+        showMobileMenu: false
     },
     mounted(){
     	this.$validator.setLocale('nl');
@@ -65,4 +66,5 @@ $(function(){
     itemSelector : '.showcase-album-item'
   });
   baguetteBox.run('.gallery');
+
 });

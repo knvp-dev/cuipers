@@ -15,6 +15,12 @@
 
 // Custom css
 
+[v-cloak] { display:none; }
+
+.is-mobile-menu{
+  display:none;
+}
+
 .hero{
 	background-image:url('/images/hero.jpg')!important;
 	background-size: cover;
@@ -26,7 +32,7 @@
 }
 
 .nav-item img {
-    max-height: 55px;
+    max-height: 80px;
 }
 .has-no-background{
 	background:none;
@@ -151,6 +157,23 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 .error-msg{
 	color:#F06560;
 }
+
+a{
+  color:#000;
+}
+
+.content a:not(.button):visited{
+  color:#4a4a4a;
+}
+
+.content a:not(.button):hover{
+  color:#000;
+}
+
+.footer{
+  padding-bottom:30px;
+}
+
 .sk-fading-circle {
   margin: 100px auto;
   width: 40px;
@@ -285,4 +308,22 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 @keyframes sk-circleFadeDelay {
   0%, 39%, 100% { opacity: 0; }
   40% { opacity: 1; } 
+}
+
+@media(max-width:768px){
+  .is-mobile-menu{
+    display:block;
+  }
+
+  .nav-menu .nav-item{
+    padding:20px;
+  }
+
+  .nav-toggle{
+    cursor: pointer;
+    display: block;
+    height: 99px;
+    position: relative;
+    width: 100px;
+  }
 }

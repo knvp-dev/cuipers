@@ -24,3 +24,5 @@ Route::get('/bouwwerken/{categery}', 'ShowcaseController@index');
 Route::get('/bouwwerken/{category}/showcase/{album_id}', 'ShowcaseController@show');
 
 Route::post('/contact', 'ContactController@send');
+Route::get('/contact', 'ContactController@index');
+Route::get('/jobs', 'VacaturesController@index');
